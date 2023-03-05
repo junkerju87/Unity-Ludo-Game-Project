@@ -1,8 +1,8 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dice : MonoBehaviour
+public class DiceRoll : MonoBehaviour
 {
     private Sprite[] diceSides;
     private SpriteRenderer rend;
@@ -16,13 +16,15 @@ public class Dice : MonoBehaviour
         rend.sprite = diceSides[5];
     }
 
-    private void MouseDown()
+    private void OnMouseDown()
     {
-        if (!GameControl.gameOver && coroutineAllowed)
-            StartCoroutine("RollDice");
+        if (coroutineAllowed == true)
+        {
+            StartCoroutine("RollTheDice");
+        }
     }
 
-    private IEnumerator RollDice()
+    private IEnumerator RollTheDice()
     {
         coroutineAllowed = false;
         int randomDiceSide = 0;
@@ -33,19 +35,28 @@ public class Dice : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        GameControl.diceSideThrown = randomDiceSide + 1;
+        Game_Controller_Script.diceThrown = 6; //randomDiceSide + 1;
 
-        GameControl.MovePlayer(1);
         if (whosTurn == 1)
         {
-            GameControl.MovePlayer(1);
+            Game_Controller_Script.MovePlayer(1);
+            whosTurn += 1;
         }
-        else if (whosTurn == -1)
+        else if (whosTurn == 2)
         {
-            GameControl.MovePlayer(2);
+            Game_Controller_Script.MovePlayer(2);
+            whosTurn += 1;
         }
-        whosTurn *= -1;
+        else if (whosTurn == 3)
+        {
+            Game_Controller_Script.MovePlayer(3);
+            whosTurn += 1;
+        }
+        else if (whosTurn == 4)
+        {
+            Game_Controller_Script.MovePlayer(4);
+            whosTurn = 1;
+        }
         coroutineAllowed = true;
     }
 }
-*/
