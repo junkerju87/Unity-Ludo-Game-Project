@@ -15,21 +15,21 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
-        /*whoWinsTextShadow = GameObject.Find("WhoWinsText");
+        whoWinsTextShadow = GameObject.Find("WhoWinsText");
         player1MoveText = GameObject.Find("Player1MoveText");
-        player2MoveText = GameObject.Find("Player2MoveText");*/
+        player2MoveText = GameObject.Find("Player2MoveText");
         player1 = GameObject.Find("Ravenclaw 1");
         player2 = GameObject.Find("Hufflepuff 1");
-        /*player1.GetComponent<FollowThePath>().moveAllowed = false;
+        player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
         whoWinsTextShadow.gameObject.SetActive(false);
         player1MoveText.gameObject.SetActive(true);
-        player2MoveText.gameObject.SetActive(false);*/
+        player2MoveText.gameObject.SetActive(false);
     }
-    
+
     void Update()
     {
-        if(player1.GetComponent<FollowThePath>().waypointIndex > 
+        if (player1.GetComponent<FollowThePath>().waypointIndex >
             player1StartWaypoint + diceSideThrown)
         {
             player1.GetComponent<FollowThePath>().moveAllowed = false;
@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
             player2MoveText.gameObject.SetActive(true);
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
         }
-        if(player2.GetComponent<FollowThePath>().waypointIndex > 
+        if (player2.GetComponent<FollowThePath>().waypointIndex >
             player2StartWaypoint + diceSideThrown)
         {
             player2.GetComponent<FollowThePath>().moveAllowed = false;
@@ -45,7 +45,7 @@ public class GameControl : MonoBehaviour
             player1MoveText.gameObject.SetActive(true);
             player2StartWaypoint = player2.GetComponent<FollowThePath>().waypointIndex - 1;
         }
-        /*if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
+        if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
             whoWinsTextShadow.gameObject.SetActive(true);
             player2MoveText.gameObject.SetActive(false);
@@ -60,19 +60,21 @@ public class GameControl : MonoBehaviour
             player1MoveText.gameObject.SetActive(false);
             //whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
             gameOver = true;
-        }*/
+        }
 
     }
 
     public static void MovePlayer(int playerToMove)
     {
-        switch(playerToMove)
+        switch (playerToMove)
         {
             case 1:
                 player1.GetComponent<FollowThePath>().moveAllowed = true;
+                player1.GetComponent<FollowThePath>().waypointIndex = diceSideThrown + player1StartWaypoint;
                 break;
             case 2:
                 player2.GetComponent<FollowThePath>().moveAllowed = true;
+                player2.GetComponent<FollowThePath>().waypointIndex = diceSideThrown + player2StartWaypoint;
                 break;
         }
     }

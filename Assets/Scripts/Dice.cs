@@ -32,6 +32,9 @@ public class Dice : MonoBehaviour
             rend.sprite = diceSides[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }
+
+        GameControl.diceSideThrown = randomDiceSide + 1;
+
         GameControl.MovePlayer(1);
         if (whosTurn == 1)
         {
