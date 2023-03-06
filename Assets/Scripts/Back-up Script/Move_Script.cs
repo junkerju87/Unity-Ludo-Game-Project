@@ -30,7 +30,10 @@ public class Move_Script : MonoBehaviour
     private void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
-        moveAllowed = false;
+        if (transform.position == waypoints[waypointIndex].transform.position)
+        {
+            moveAllowed = true;
+        }
     }
 
     private void OnMouseDown()

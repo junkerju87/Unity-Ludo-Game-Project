@@ -35,7 +35,7 @@ public class DiceRoll : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        Game_Controller_Script.diceThrown = 6; //randomDiceSide + 1;
+        Game_Controller_Script.diceThrown = randomDiceSide + 1;
 
         if (whosTurn == 1)
         {

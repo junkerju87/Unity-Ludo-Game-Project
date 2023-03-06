@@ -135,7 +135,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -166,7 +166,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (11)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -197,7 +197,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -228,7 +228,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -259,7 +259,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -290,7 +290,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -321,7 +321,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (33)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -492,7 +492,7 @@ MonoBehaviour:
   - {fileID: 1995897595}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &144663413
 CircleCollider2D:
@@ -522,7 +522,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (32)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -553,7 +553,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (20)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -584,7 +584,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -615,7 +615,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (45)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -646,7 +646,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -677,7 +677,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (49)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -848,7 +848,7 @@ MonoBehaviour:
   - {fileID: 664967224}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &350145219
 CircleCollider2D:
@@ -878,7 +878,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (14)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -909,7 +909,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -940,7 +940,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (37)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -971,7 +971,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (30)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1002,7 +1002,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (24)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1033,7 +1033,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (40)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1064,7 +1064,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (16)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   - {fileID: 17875720}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &523466016
 CircleCollider2D:
@@ -1349,7 +1349,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1380,7 +1380,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (17)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1630,7 +1630,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1845,7 +1845,7 @@ MonoBehaviour:
   - {fileID: 17875720}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &651985896
 CircleCollider2D:
@@ -1875,7 +1875,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (11)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1953,7 +1953,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (44)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1984,7 +1984,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (47)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2015,7 +2015,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2169,7 +2169,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (51)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2200,7 +2200,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (11)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2231,7 +2231,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (39)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2262,7 +2262,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2433,7 +2433,7 @@ MonoBehaviour:
   - {fileID: 933436000}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &827907936
 CircleCollider2D:
@@ -2463,7 +2463,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2494,7 +2494,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (48)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2525,7 +2525,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2556,7 +2556,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (42)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2587,7 +2587,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (28)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2618,7 +2618,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (11)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2649,7 +2649,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2680,7 +2680,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (13)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2711,7 +2711,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2742,7 +2742,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2913,7 +2913,7 @@ MonoBehaviour:
   - {fileID: 664967224}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &990922317
 CircleCollider2D:
@@ -2943,7 +2943,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (27)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2974,7 +2974,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3005,7 +3005,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3119,7 +3119,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3150,7 +3150,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3321,7 +3321,7 @@ MonoBehaviour:
   - {fileID: 933436000}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1110423687
 CircleCollider2D:
@@ -3351,7 +3351,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3556,7 +3556,7 @@ MonoBehaviour:
   - {fileID: 17875720}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1144336054
 CircleCollider2D:
@@ -3726,7 +3726,7 @@ MonoBehaviour:
   - {fileID: 933436000}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1146972056
 CircleCollider2D:
@@ -3756,7 +3756,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3787,7 +3787,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (23)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3818,7 +3818,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (18)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3849,7 +3849,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3931,7 +3931,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3962,7 +3962,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3993,7 +3993,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4024,7 +4024,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (26)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4055,7 +4055,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4086,7 +4086,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4117,7 +4117,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4148,7 +4148,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (50)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4303,7 +4303,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4474,7 +4474,7 @@ MonoBehaviour:
   - {fileID: 933436000}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1470756471
 CircleCollider2D:
@@ -4504,7 +4504,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (21)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4535,7 +4535,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (22)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4706,7 +4706,7 @@ MonoBehaviour:
   - {fileID: 1995897595}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1501925055
 CircleCollider2D:
@@ -4736,7 +4736,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4767,7 +4767,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4798,7 +4798,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4829,7 +4829,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (29)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4860,7 +4860,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5031,7 +5031,7 @@ MonoBehaviour:
   - {fileID: 664967224}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1558125321
 CircleCollider2D:
@@ -5061,7 +5061,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5092,7 +5092,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (25)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5123,7 +5123,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5154,7 +5154,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5185,7 +5185,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (43)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5216,7 +5216,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (12)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5247,7 +5247,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (35)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5418,7 +5418,7 @@ MonoBehaviour:
   - {fileID: 1995897595}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1604933446
 CircleCollider2D:
@@ -5448,7 +5448,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (41)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5754,7 +5754,7 @@ MonoBehaviour:
   - {fileID: 664967224}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1661684673
 CircleCollider2D:
@@ -5919,7 +5919,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5950,7 +5950,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (31)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5981,7 +5981,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (19)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6012,7 +6012,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (36)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6043,7 +6043,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6074,7 +6074,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6105,7 +6105,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6136,7 +6136,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (38)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6167,7 +6167,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6198,7 +6198,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6229,7 +6229,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6260,7 +6260,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint green (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6291,7 +6291,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (34)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6462,7 +6462,7 @@ MonoBehaviour:
   - {fileID: 1995897595}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &1915716028
 CircleCollider2D:
@@ -6492,7 +6492,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6523,7 +6523,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6554,7 +6554,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Yellow (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6585,7 +6585,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (11)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6616,7 +6616,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint blue (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6751,7 +6751,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (15)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6782,7 +6782,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Red (46)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6813,7 +6813,7 @@ GameObject:
   m_Layer: 0
   m_Name: wavepoint red red (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6984,7 +6984,7 @@ MonoBehaviour:
   - {fileID: 17875720}
   moveAllowed: 0
   Clicked: 0
-  moveSpeed: 1
+  moveSpeed: 5
   waypointIndex: 0
 --- !u!58 &2108559999
 CircleCollider2D:
