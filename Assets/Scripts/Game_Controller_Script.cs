@@ -82,6 +82,7 @@ public class Game_Controller_Script : MonoBehaviour
         switch (playerToMove)
         {
             case 1:
+                diceThrown = 6;
                 Debug.Log("turn 1");
                 player1TurnText.gameObject.SetActive(false);
                 player2TurnText.gameObject.SetActive(true);
@@ -132,7 +133,8 @@ public class Game_Controller_Script : MonoBehaviour
             NotClicked = true;
             while (NotClicked == true)
             {
-                if (true)//(player1_1.GetComponent<Move_Script>().Clicked == true)
+                Debug.Log("While Loop Triggered");
+                if (player1_1.GetComponent<Move_Script>().Clicked == true)
                 {
                     if (player1_1OnBoard == false)
                     {
@@ -243,6 +245,7 @@ public class Game_Controller_Script : MonoBehaviour
             }
         }
     }
+
     private static void Player2Select()
     {
         Debug.Log("Player 2 turn triggered");

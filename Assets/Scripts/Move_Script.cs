@@ -40,6 +40,7 @@ public class Move_Script : MonoBehaviour
     {
         Clicked = true;
     }
+    
     private void OnMouseUp()
     {
         Clicked = false;
