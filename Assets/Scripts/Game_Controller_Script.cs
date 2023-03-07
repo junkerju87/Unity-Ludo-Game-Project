@@ -335,7 +335,7 @@ public class Game_Controller_Script : MonoBehaviour
     private static void Player2Select()
     {
         Debug.Log("Player 2 turn triggered");
-        if (diceThrown != 6 && player2_1OnBoard == false && player2_2OnBoard == false && player2_3OnBoard == false && player2_4OnBoard == false)
+        if (player2_1OnBoard == false && player2_2OnBoard == false && player2_3OnBoard == false && player2_4OnBoard == false && diceThrown != 3 && diceThrown != 6)
         {
             Debug.Log("no legal moves, pass");
         }
@@ -444,7 +444,7 @@ public class Game_Controller_Script : MonoBehaviour
     private static void Player3Select()
     {
         Debug.Log("Player 3 turn triggered");
-        if (diceThrown != 6 && player3_1OnBoard == false && player3_2OnBoard == false && player3_3OnBoard == false && player3_4OnBoard == false)
+        if (player3_1OnBoard == false && player3_2OnBoard == false && player3_3OnBoard == false && player3_4OnBoard == false && diceThrown != 3 && diceThrown != 6)
         {
             Debug.Log("no legal moves, pass");
         }
@@ -553,7 +553,7 @@ public class Game_Controller_Script : MonoBehaviour
     private static void Player4Select()
     {
         Debug.Log("Player 4 turn triggered");
-        if (diceThrown != 6 && player4_1OnBoard == false && player4_2OnBoard == false && player4_3OnBoard == false && player4_4OnBoard == false)
+        if (player4_1OnBoard == false && player4_2OnBoard == false && player4_3OnBoard == false && player4_4OnBoard == false && diceThrown != 3 && diceThrown != 6)
         {
             Debug.Log("no legal moves, pass");
         }
