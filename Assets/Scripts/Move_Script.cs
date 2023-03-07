@@ -6,7 +6,8 @@ public class Move_Script : MonoBehaviour
 {
     public Transform[] waypoints;
     public bool moveAllowed = false;
-    public bool Clicked = false;
+    public bool Clicked = false; //literally does nothing but removing it will be too much work so whatever
+    public bool ReachedGoal = false;
 
     [SerializeField]
     private float moveSpeed = 1f;
@@ -23,26 +24,25 @@ public class Move_Script : MonoBehaviour
     {
         if (moveAllowed == true)
         {
+            if (waypointIndex > 50)
+            {
+                waypointIndex = 50;
+            }
             Move();
+            if (waypointIndex == 50)
+            {
+                ReachedGoal = true;
+            }
         }
     }
 
     private void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
+
         if (transform.position == waypoints[waypointIndex].transform.position)
         {
-            moveAllowed = true;
+            moveAllowed = false;
         }
-    }
-
-    private void OnMouseDown()
-    {
-        Clicked = true;
-    }
-    
-    private void OnMouseUp()
-    {
-        Clicked = false;
     }
 }

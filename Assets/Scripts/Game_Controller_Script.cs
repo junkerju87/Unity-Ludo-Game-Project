@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//only need to fix the clicking part and dupe the code for all 4 characters and we're done with the movements
+//find the // part and put the victory scene change command over there
 
 public class Game_Controller_Script : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class Game_Controller_Script : MonoBehaviour
     private static GameObject player1TurnText, player2TurnText, player3TurnText, player4TurnText;
     public static int diceThrown = 0;
     public static bool NotClicked = true;
+    public static int randomPiece = 0;
 
     private static GameObject player1_1, player1_2, player1_3, player1_4;
     private static GameObject player2_1, player2_2, player2_3, player2_4;
@@ -32,6 +33,22 @@ public class Game_Controller_Script : MonoBehaviour
     private static bool player4_2OnBoard = false;
     private static bool player4_3OnBoard = false;
     private static bool player4_4OnBoard = false;
+    private static bool player1_1Finished = false;
+    private static bool player1_2Finished = false;
+    private static bool player1_3Finished = false;
+    private static bool player1_4Finished = false;
+    private static bool player2_1Finished = false;
+    private static bool player2_2Finished = false;
+    private static bool player2_3Finished = false;
+    private static bool player2_4Finished = false;
+    private static bool player3_1Finished = false;
+    private static bool player3_2Finished = false;
+    private static bool player3_3Finished = false;
+    private static bool player3_4Finished = false;
+    private static bool player4_1Finished = false;
+    private static bool player4_2Finished = false;
+    private static bool player4_3Finished = false;
+    private static bool player4_4Finished = false;
 
     void Start()
     {
@@ -59,22 +76,107 @@ public class Game_Controller_Script : MonoBehaviour
         player4_2 = GameObject.Find("Gryffindor 2");
         player4_3 = GameObject.Find("Gryffindor 3");
         player4_4 = GameObject.Find("Gryffindor 4");
-        player1_1OnBoard = false;
-        player1_2OnBoard = false;
-        player1_3OnBoard = false;
-        player1_4OnBoard = false;
-        player2_1OnBoard = false;
-        player2_2OnBoard = false;
-        player2_3OnBoard = false;
-        player2_4OnBoard = false;
-        player3_1OnBoard = false;
-        player3_2OnBoard = false;
-        player3_3OnBoard = false;
-        player3_4OnBoard = false;
-        player4_1OnBoard = false;
-        player4_2OnBoard = false;
-        player4_3OnBoard = false;
-        player4_4OnBoard = false;
+    }
+
+    private void Update()
+    {
+        if (player1_1.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player1_1Finished = true;
+            
+        }
+        if (player1_2.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player1_2Finished = true;
+            
+        }
+        if (player1_3.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player1_1Finished = true;
+            
+        }
+        if (player1_4.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player1_1Finished = true;
+            
+        }
+        if (player2_1.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player2_1Finished = true;
+            
+        }
+        if (player2_2.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player2_2Finished = true;
+            
+        }
+        if (player2_3.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player2_3Finished = true;
+            
+        }
+        if (player2_4.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player2_4Finished = true;
+            
+        }
+        if (player3_1.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player3_1Finished = true;
+            
+        }
+        if (player3_2.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player3_2Finished = true;
+            
+        }
+        if (player3_3.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player3_3Finished = true;
+            
+        }
+        if (player3_4.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player3_4Finished = true;
+            
+        }
+        if (player4_1.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player4_1Finished = true;
+            
+        }
+        if (player4_2.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player4_2Finished = true;
+            
+        }
+        if (player4_3.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player4_3Finished = true;
+            
+        }
+        if (player4_4.GetComponent<Move_Script>().ReachedGoal == true)
+        {
+            player4_4Finished = true;
+            
+        }
+
+        if (player1_1Finished == true && player1_2Finished == true && player1_3Finished == true && player1_4Finished == true)
+        {
+            //player 1 victory scene change
+        }
+        else if (player2_1Finished == true && player2_2Finished == true && player2_3Finished == true && player2_4Finished == true)
+        {
+            //player 2 victory scene change
+        }
+        else if (player3_1Finished == true && player3_2Finished == true && player3_3Finished == true && player3_4Finished == true)
+        {
+            //player 3 victory scene change
+        }
+        else if (player4_1Finished == true && player4_2Finished == true && player4_3Finished == true && player4_4Finished == true)
+        {
+            //player 4 victory scene change
+        }
     }
 
     public static void MovePlayer(int playerToMove)
@@ -82,7 +184,6 @@ public class Game_Controller_Script : MonoBehaviour
         switch (playerToMove)
         {
             case 1:
-                diceThrown = 6;
                 Debug.Log("turn 1");
                 player1TurnText.gameObject.SetActive(false);
                 player2TurnText.gameObject.SetActive(true);
@@ -124,7 +225,7 @@ public class Game_Controller_Script : MonoBehaviour
     private static void Player1Select()
     {
         Debug.Log("player 1 triggred");
-        if (diceThrown != 6 && player1_1OnBoard == false && player1_2OnBoard == false && player1_3OnBoard == false && player1_4OnBoard == false)
+        if (player1_1OnBoard == false && player1_2OnBoard == false && player1_3OnBoard == false && player1_4OnBoard == false && diceThrown != 3 && diceThrown != 6)
         {
             Debug.Log("no legal moves, pass");
         }
@@ -134,11 +235,12 @@ public class Game_Controller_Script : MonoBehaviour
             while (NotClicked == true)
             {
                 Debug.Log("While Loop Triggered");
-                if (player1_1.GetComponent<Move_Script>().Clicked == true)
+                randomPiece = Random.Range(0, 4);
+                if (randomPiece == 1)
                 {
                     if (player1_1OnBoard == false)
                     {
-                        if (diceThrown == 6)
+                        if (diceThrown == 6 || diceThrown == 3)
                         {
                             player1_1.GetComponent<Move_Script>().waypointIndex += 1;
                             player1_1.GetComponent<Move_Script>().moveAllowed = true;
@@ -147,12 +249,8 @@ public class Game_Controller_Script : MonoBehaviour
                             Debug.Log("Player1_1 on board");
                             NotClicked = false;
                         }
-                        else
-                        {
-                            player1_1.GetComponent<Move_Script>().Clicked = false;
-                        }
                     }
-                    else if (player1_1OnBoard == true)
+                    else if (player1_1OnBoard == true && player1_1Finished == false)
                     {
                         player1_1.GetComponent<Move_Script>().waypointIndex += diceThrown;
                         player1_1.GetComponent<Move_Script>().moveAllowed = true;
@@ -161,11 +259,11 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (player1_2.GetComponent<Move_Script>().Clicked == true)
+                else if (randomPiece == 2)
                 {
                     if (player1_2OnBoard == false)
                     {
-                        if (diceThrown == 6)
+                        if (diceThrown == 6 || diceThrown == 3)
                         {
                             player1_2.GetComponent<Move_Script>().waypointIndex += 1;
                             player1_2.GetComponent<Move_Script>().moveAllowed = true;
@@ -174,12 +272,8 @@ public class Game_Controller_Script : MonoBehaviour
                             Debug.Log("Player1_2 on board");
                             NotClicked = false;
                         }
-                        else
-                        {
-                            player1_2.GetComponent<Move_Script>().Clicked = false;
-                        }
                     }
-                    else if (player1_2OnBoard == true)
+                    else if (player1_2OnBoard == true && player1_2Finished == false)
                     {
                         player1_2.GetComponent<Move_Script>().waypointIndex += diceThrown;
                         player1_2.GetComponent<Move_Script>().moveAllowed = true;
@@ -188,11 +282,11 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (player1_3.GetComponent<Move_Script>().Clicked == true)
+                else if (randomPiece == 3)
                 {
                     if (player1_3OnBoard == false)
                     {
-                        if (diceThrown == 6)
+                        if (diceThrown == 6 || diceThrown == 3)
                         {
                             player1_3.GetComponent<Move_Script>().waypointIndex += 1;
                             player1_3.GetComponent<Move_Script>().moveAllowed = true;
@@ -201,12 +295,8 @@ public class Game_Controller_Script : MonoBehaviour
                             Debug.Log("Player1_3 on board");
                             NotClicked = false;
                         }
-                        else
-                        {
-                            player1_3.GetComponent<Move_Script>().Clicked = false;
-                        }
                     }
-                    else if (player1_3OnBoard == true)
+                    else if (player1_3OnBoard == true && player1_3Finished == false)
                     {
                         player1_3.GetComponent<Move_Script>().waypointIndex += diceThrown;
                         player1_3.GetComponent<Move_Script>().moveAllowed = true;
@@ -215,11 +305,11 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (player1_4.GetComponent<Move_Script>().Clicked == true)
+                else if (randomPiece == 4)
                 {
                     if (player1_4OnBoard == false)
                     {
-                        if (diceThrown == 6)
+                        if (diceThrown == 6 || diceThrown == 3)
                         {
                             player1_4.GetComponent<Move_Script>().waypointIndex += 1;
                             player1_4.GetComponent<Move_Script>().moveAllowed = true;
@@ -228,12 +318,8 @@ public class Game_Controller_Script : MonoBehaviour
                             Debug.Log("Player1_4 on board");
                             NotClicked = false;
                         }
-                        else
-                        {
-                            player1_4.GetComponent<Move_Script>().Clicked = false;
-                        }
                     }
-                    else if (player1_4OnBoard == true)
+                    else if (player1_4OnBoard == true && player1_4Finished == false)
                     {
                         player1_4.GetComponent<Move_Script>().waypointIndex += diceThrown;
                         player1_4.GetComponent<Move_Script>().moveAllowed = true;
@@ -249,13 +335,328 @@ public class Game_Controller_Script : MonoBehaviour
     private static void Player2Select()
     {
         Debug.Log("Player 2 turn triggered");
+        if (diceThrown != 6 && player2_1OnBoard == false && player2_2OnBoard == false && player2_3OnBoard == false && player2_4OnBoard == false)
+        {
+            Debug.Log("no legal moves, pass");
+        }
+        else
+        {
+            NotClicked = true;
+            while (NotClicked == true)
+            {
+                Debug.Log("While Loop Triggered");
+                randomPiece = Random.Range(0, 4);
+                if (randomPiece == 1)
+                {
+                    if (player2_1OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player2_1.GetComponent<Move_Script>().waypointIndex += 1;
+                            player2_1.GetComponent<Move_Script>().moveAllowed = true;
+                            player2_1.GetComponent<Move_Script>().Clicked = false;
+                            player2_1OnBoard = true;
+                            Debug.Log("Player2_1 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player2_1OnBoard == true && player2_1Finished == false)
+                    {
+                        player2_1.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player2_1.GetComponent<Move_Script>().moveAllowed = true;
+                        player2_1.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player2_1 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 2)
+                {
+                    if (player2_2OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player2_2.GetComponent<Move_Script>().waypointIndex += 1;
+                            player2_2.GetComponent<Move_Script>().moveAllowed = true;
+                            player2_2.GetComponent<Move_Script>().Clicked = false;
+                            player2_2OnBoard = true;
+                            Debug.Log("Player2_2 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player2_2OnBoard == true && player2_2Finished == false)
+                    {
+                        player2_2.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player2_2.GetComponent<Move_Script>().moveAllowed = true;
+                        player2_2.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player2_2 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 3)
+                {
+                    if (player2_3OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player2_3.GetComponent<Move_Script>().waypointIndex += 1;
+                            player2_3.GetComponent<Move_Script>().moveAllowed = true;
+                            player2_3.GetComponent<Move_Script>().Clicked = false;
+                            player2_3OnBoard = true;
+                            Debug.Log("Player2_3 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player2_3OnBoard == true && player2_3Finished == false)
+                    {
+                        player2_3.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player2_3.GetComponent<Move_Script>().moveAllowed = true;
+                        player2_3.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player2_3 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 4)
+                {
+                    if (player2_4OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player2_4.GetComponent<Move_Script>().waypointIndex += 1;
+                            player2_4.GetComponent<Move_Script>().moveAllowed = true;
+                            player2_4.GetComponent<Move_Script>().Clicked = false;
+                            player2_4OnBoard = true;
+                            Debug.Log("Player1_4 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player2_4OnBoard == true && player2_4Finished == false)
+                    {
+                        player2_4.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player2_4.GetComponent<Move_Script>().moveAllowed = true;
+                        player2_4.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player2_4 on moved");
+                        NotClicked = false;
+                    }
+                }
+            }
+        }
     }
     private static void Player3Select()
     {
         Debug.Log("Player 3 turn triggered");
+        if (diceThrown != 6 && player3_1OnBoard == false && player3_2OnBoard == false && player3_3OnBoard == false && player3_4OnBoard == false)
+        {
+            Debug.Log("no legal moves, pass");
+        }
+        else
+        {
+            NotClicked = true;
+            while (NotClicked == true)
+            {
+                Debug.Log("While Loop Triggered");
+                randomPiece = Random.Range(0, 4);
+                if (randomPiece == 1)
+                {
+                    if (player3_1OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player3_1.GetComponent<Move_Script>().waypointIndex += 1;
+                            player3_1.GetComponent<Move_Script>().moveAllowed = true;
+                            player3_1.GetComponent<Move_Script>().Clicked = false;
+                            player3_1OnBoard = true;
+                            Debug.Log("Player3_1 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player3_1OnBoard == true && player3_1Finished == false)
+                    {
+                        player3_1.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player3_1.GetComponent<Move_Script>().moveAllowed = true;
+                        player3_1.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player3_1 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 2)
+                {
+                    if (player3_2OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player3_2.GetComponent<Move_Script>().waypointIndex += 1;
+                            player3_2.GetComponent<Move_Script>().moveAllowed = true;
+                            player3_2.GetComponent<Move_Script>().Clicked = false;
+                            player3_2OnBoard = true;
+                            Debug.Log("Player3_2 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player3_2OnBoard == true && player3_2Finished == false)
+                    {
+                        player3_2.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player3_2.GetComponent<Move_Script>().moveAllowed = true;
+                        player3_2.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player3_2 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 3)
+                {
+                    if (player3_3OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player3_3.GetComponent<Move_Script>().waypointIndex += 1;
+                            player3_3.GetComponent<Move_Script>().moveAllowed = true;
+                            player3_3.GetComponent<Move_Script>().Clicked = false;
+                            player3_3OnBoard = true;
+                            Debug.Log("Player3_3 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player3_3OnBoard == true && player3_3Finished == false)
+                    {
+                        player3_3.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player3_3.GetComponent<Move_Script>().moveAllowed = true;
+                        player3_3.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player3_3 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 4)
+                {
+                    if (player3_4OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player3_4.GetComponent<Move_Script>().waypointIndex += 1;
+                            player3_4.GetComponent<Move_Script>().moveAllowed = true;
+                            player3_4.GetComponent<Move_Script>().Clicked = false;
+                            player3_4OnBoard = true;
+                            Debug.Log("Player3_4 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player3_4OnBoard == true && player3_4Finished == false)
+                    {
+                        player3_4.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player3_4.GetComponent<Move_Script>().moveAllowed = true;
+                        player3_4.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player3_4 on moved");
+                        NotClicked = false;
+                    }
+                }
+            }
+        }
     }
     private static void Player4Select()
     {
         Debug.Log("Player 4 turn triggered");
+        if (diceThrown != 6 && player4_1OnBoard == false && player4_2OnBoard == false && player4_3OnBoard == false && player4_4OnBoard == false)
+        {
+            Debug.Log("no legal moves, pass");
+        }
+        else
+        {
+            NotClicked = true;
+            while (NotClicked == true)
+            {
+                Debug.Log("While Loop Triggered");
+                randomPiece = Random.Range(0, 4);
+                if (randomPiece == 1)
+                {
+                    if (player4_1OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player4_1.GetComponent<Move_Script>().waypointIndex += 1;
+                            player4_1.GetComponent<Move_Script>().moveAllowed = true;
+                            player4_1.GetComponent<Move_Script>().Clicked = false;
+                            player4_1OnBoard = true;
+                            Debug.Log("Player4_1 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player4_1OnBoard == true && player4_1Finished == false)
+                    {
+                        player4_1.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player4_1.GetComponent<Move_Script>().moveAllowed = true;
+                        player4_1.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player4_1 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 2)
+                {
+                    if (player4_2OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player4_2.GetComponent<Move_Script>().waypointIndex += 1;
+                            player4_2.GetComponent<Move_Script>().moveAllowed = true;
+                            player4_2.GetComponent<Move_Script>().Clicked = false;
+                            player4_2OnBoard = true;
+                            Debug.Log("Player4_2 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player4_2OnBoard == true && player4_2Finished == false)
+                    {
+                        player4_2.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player4_2.GetComponent<Move_Script>().moveAllowed = true;
+                        player4_2.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player4_2 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 3)
+                {
+                    if (player4_3OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player4_3.GetComponent<Move_Script>().waypointIndex += 1;
+                            player4_3.GetComponent<Move_Script>().moveAllowed = true;
+                            player4_3.GetComponent<Move_Script>().Clicked = false;
+                            player4_3OnBoard = true;
+                            Debug.Log("Player4_3 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player4_3OnBoard == true && player4_3Finished == false)
+                    {
+                        player4_3.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player4_3.GetComponent<Move_Script>().moveAllowed = true;
+                        player4_3.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player4_3 on moved");
+                        NotClicked = false;
+                    }
+                }
+                else if (randomPiece == 4)
+                {
+                    if (player4_4OnBoard == false)
+                    {
+                        if (diceThrown == 6 || diceThrown == 3)
+                        {
+                            player4_4.GetComponent<Move_Script>().waypointIndex += 1;
+                            player4_4.GetComponent<Move_Script>().moveAllowed = true;
+                            player4_4.GetComponent<Move_Script>().Clicked = false;
+                            player4_4OnBoard = true;
+                            Debug.Log("Player4_4 on board");
+                            NotClicked = false;
+                        }
+                    }
+                    else if (player4_4OnBoard == true && player4_4Finished == false)
+                    {
+                        player4_4.GetComponent<Move_Script>().waypointIndex += diceThrown;
+                        player4_4.GetComponent<Move_Script>().moveAllowed = true;
+                        player4_4.GetComponent<Move_Script>().Clicked = false;
+                        Debug.Log("Player4_4 on moved");
+                        NotClicked = false;
+                    }
+                }
+            }
+        }
     }
 }
