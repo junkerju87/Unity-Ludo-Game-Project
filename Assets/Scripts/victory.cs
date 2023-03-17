@@ -15,12 +15,17 @@ public class victory : MonoBehaviour
     private static GameObject logo3;
     private static GameObject logo4;
 
-    // Start is called before the first frame update
     void Awake()
     {
-        player = GameObject.FindObjectOfType<Game_Controller_Script>();
+        player = FindObjectOfType<Game_Controller_Script>();
     }
+
     void Start()
+    {
+        Initialize();
+    }
+
+    void Initialize()
     {
         logo1 = GameObject.Find("HufflepuffLogo");
         logo2 = GameObject.Find("RavenclawLogo");
@@ -33,10 +38,13 @@ public class victory : MonoBehaviour
         congratulationText.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        CheckWinner();
+    }
+
+    void CheckWinner()
+    {
         if (Game_Controller_Script.player1win == true)
         {
             logo1.gameObject.SetActive(true);
@@ -61,6 +69,5 @@ public class victory : MonoBehaviour
             congratulationText.text = "Congratulation, Gryffindor! You won the House Cup in Hogwarts Tournament of Houses!";
             congratulationText.gameObject.SetActive(true);
         }
-
     }
 }
