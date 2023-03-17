@@ -13,10 +13,10 @@ public class Game_Controller_Script : MonoBehaviour
     public static int diceThrown = 0;
     public static bool NotClicked = true;
     public static int randomPiece = 0;
-    public bool player1win = false;
-    public bool player2win = false;
-    public bool player3win = false;
-    public bool player4win = false;
+    public static bool player1win = false;
+    public static bool player2win = false;
+    public static bool player3win = false;
+    public static bool player4win = false;
 
     private static GameObject player1_1, player1_2, player1_3, player1_4;
     private static GameObject player2_1, player2_2, player2_3, player2_4;
@@ -169,24 +169,28 @@ public class Game_Controller_Script : MonoBehaviour
         if (player1_1Finished == true && player1_2Finished == true && player1_3Finished == true && player1_4Finished == true)
         {
             //player 1 victory scene change
+            Debug.Log("Hufflepuff won");
             SceneManager.LoadScene("Victory");
             player1win = true;
         }
         else if (player2_1Finished == true && player2_2Finished == true && player2_3Finished == true && player2_4Finished == true)
         {
             //player 2 victory scene change
+            Debug.Log("Ravenclaw won");
             SceneManager.LoadScene("Victory");
             player2win = true;
         }
         else if (player3_1Finished == true && player3_2Finished == true && player3_3Finished == true && player3_4Finished == true)
         {
             //player 3 victory scene change
+            Debug.Log("Slyfferin won");
             SceneManager.LoadScene("Victory");
             player3win = true;
         }
         else if (player4_1Finished == true && player4_2Finished == true && player4_3Finished == true && player4_4Finished == true)
         {
             //player 4 victory scene change
+            Debug.Log("Gryffindor won");
             SceneManager.LoadScene("Victory");
             player4win = true;
         }
