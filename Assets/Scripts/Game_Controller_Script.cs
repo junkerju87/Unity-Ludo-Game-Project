@@ -249,7 +249,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player1_1OnBoard == false)
                     {
@@ -272,7 +272,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player1_2OnBoard == false)
                     {
@@ -295,7 +295,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player1_3OnBoard == false)
                     {
@@ -318,7 +318,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player1_4OnBoard == false)
                     {
@@ -359,7 +359,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player2_1OnBoard == false)
                     {
@@ -382,7 +382,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player2_2OnBoard == false)
                     {
@@ -405,7 +405,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player2_3OnBoard == false)
                     {
@@ -428,7 +428,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player2_4OnBoard == false)
                     {
@@ -468,7 +468,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player3_1OnBoard == false)
                     {
@@ -491,7 +491,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player3_2OnBoard == false)
                     {
@@ -514,7 +514,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player3_3OnBoard == false)
                     {
@@ -537,7 +537,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player3_4OnBoard == false)
                     {
@@ -577,7 +577,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player4_1OnBoard == false)
                     {
@@ -600,7 +600,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player4_2OnBoard == false)
                     {
@@ -623,7 +623,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player4_3OnBoard == false)
                     {
@@ -646,7 +646,7 @@ public class Game_Controller_Script : MonoBehaviour
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player4_4OnBoard == false)
                     {
