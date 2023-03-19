@@ -53,7 +53,7 @@ public class victory : MonoBehaviour
 
     void CheckWinner()
     {
-        // Check if Hufflepuff has won the game (variable comes from Game_Controller_Script)
+
         if (Game_Controller_Script.player1win == true)
         {
             Debug.Log(Game_Controller_Script.player1move);
