@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //find the // part and put the victory scene change command over there
 
@@ -12,6 +13,14 @@ public class Game_Controller_Script : MonoBehaviour
     public static int diceThrown = 0;
     public static bool NotClicked = true;
     public static int randomPiece = 0;
+    public static bool player1win = false;
+    public static bool player2win = false;
+    public static bool player3win = false;
+    public static bool player4win = false;
+    public static int player1move = 0;
+    public static int player2move = 0;
+    public static int player3move = 0;
+    public static int player4move = 0;
 
     private static GameObject player1_1, player1_2, player1_3, player1_4;
     private static GameObject player2_1, player2_2, player2_3, player2_4;
@@ -164,18 +173,30 @@ public class Game_Controller_Script : MonoBehaviour
         if (player1_1Finished == true && player1_2Finished == true && player1_3Finished == true && player1_4Finished == true)
         {
             //player 1 victory scene change
+            Debug.Log("Hufflepuff won");
+            SceneManager.LoadScene("Victory");
+            player1win = true;
         }
         else if (player2_1Finished == true && player2_2Finished == true && player2_3Finished == true && player2_4Finished == true)
         {
             //player 2 victory scene change
+            Debug.Log("Ravenclaw won");
+            SceneManager.LoadScene("Victory");
+            player2win = true;
         }
         else if (player3_1Finished == true && player3_2Finished == true && player3_3Finished == true && player3_4Finished == true)
         {
             //player 3 victory scene change
+            Debug.Log("Slyfferin won");
+            SceneManager.LoadScene("Victory");
+            player3win = true;
         }
         else if (player4_1Finished == true && player4_2Finished == true && player4_3Finished == true && player4_4Finished == true)
         {
             //player 4 victory scene change
+            Debug.Log("Gryffindor won");
+            SceneManager.LoadScene("Victory");
+            player4win = true;
         }
     }
 
@@ -236,7 +257,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player1_1OnBoard == false)
                     {
@@ -247,6 +268,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player1_1.GetComponent<Move_Script>().Clicked = false;
                             player1_1OnBoard = true;
                             Debug.Log("Player1_1 on board");
+                            player1move += 1;
                             NotClicked = false;
                         }
                     }
@@ -256,10 +278,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player1_1.GetComponent<Move_Script>().moveAllowed = true;
                         player1_1.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player1_1 on moved");
+                        player1move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player1_2OnBoard == false)
                     {
@@ -270,6 +293,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player1_2.GetComponent<Move_Script>().Clicked = false;
                             player1_2OnBoard = true;
                             Debug.Log("Player1_2 on board");
+                            player1move += 1;
                             NotClicked = false;
                         }
                     }
@@ -279,10 +303,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player1_2.GetComponent<Move_Script>().moveAllowed = true;
                         player1_2.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player1_2 on moved");
+                        player1move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player1_3OnBoard == false)
                     {
@@ -293,6 +318,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player1_3.GetComponent<Move_Script>().Clicked = false;
                             player1_3OnBoard = true;
                             Debug.Log("Player1_3 on board");
+                            player1move += 1;
                             NotClicked = false;
                         }
                     }
@@ -302,10 +328,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player1_3.GetComponent<Move_Script>().moveAllowed = true;
                         player1_3.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player1_3 on moved");
+                        player1move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player1_4OnBoard == false)
                     {
@@ -316,6 +343,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player1_4.GetComponent<Move_Script>().Clicked = false;
                             player1_4OnBoard = true;
                             Debug.Log("Player1_4 on board");
+                            player1move += 1;
                             NotClicked = false;
                         }
                     }
@@ -325,6 +353,7 @@ public class Game_Controller_Script : MonoBehaviour
                         player1_4.GetComponent<Move_Script>().moveAllowed = true;
                         player1_4.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player1_4 on moved");
+                        player1move += 1;
                         NotClicked = false;
                     }
                 }
@@ -346,7 +375,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player2_1OnBoard == false)
                     {
@@ -357,6 +386,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player2_1.GetComponent<Move_Script>().Clicked = false;
                             player2_1OnBoard = true;
                             Debug.Log("Player2_1 on board");
+                            player2move += 1;
                             NotClicked = false;
                         }
                     }
@@ -366,10 +396,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player2_1.GetComponent<Move_Script>().moveAllowed = true;
                         player2_1.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player2_1 on moved");
+                        player2move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player2_2OnBoard == false)
                     {
@@ -380,6 +411,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player2_2.GetComponent<Move_Script>().Clicked = false;
                             player2_2OnBoard = true;
                             Debug.Log("Player2_2 on board");
+                            player2move += 1;
                             NotClicked = false;
                         }
                     }
@@ -389,10 +421,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player2_2.GetComponent<Move_Script>().moveAllowed = true;
                         player2_2.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player2_2 on moved");
+                        player2move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player2_3OnBoard == false)
                     {
@@ -403,6 +436,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player2_3.GetComponent<Move_Script>().Clicked = false;
                             player2_3OnBoard = true;
                             Debug.Log("Player2_3 on board");
+                            player2move += 1;
                             NotClicked = false;
                         }
                     }
@@ -412,10 +446,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player2_3.GetComponent<Move_Script>().moveAllowed = true;
                         player2_3.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player2_3 on moved");
+                        player2move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player2_4OnBoard == false)
                     {
@@ -426,6 +461,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player2_4.GetComponent<Move_Script>().Clicked = false;
                             player2_4OnBoard = true;
                             Debug.Log("Player1_4 on board");
+                            player2move += 1;
                             NotClicked = false;
                         }
                     }
@@ -435,6 +471,7 @@ public class Game_Controller_Script : MonoBehaviour
                         player2_4.GetComponent<Move_Script>().moveAllowed = true;
                         player2_4.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player2_4 on moved");
+                        player2move += 1;
                         NotClicked = false;
                     }
                 }
@@ -455,7 +492,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player3_1OnBoard == false)
                     {
@@ -466,6 +503,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player3_1.GetComponent<Move_Script>().Clicked = false;
                             player3_1OnBoard = true;
                             Debug.Log("Player3_1 on board");
+                            player3move += 1;
                             NotClicked = false;
                         }
                     }
@@ -475,10 +513,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player3_1.GetComponent<Move_Script>().moveAllowed = true;
                         player3_1.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player3_1 on moved");
+                        player3move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player3_2OnBoard == false)
                     {
@@ -489,6 +528,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player3_2.GetComponent<Move_Script>().Clicked = false;
                             player3_2OnBoard = true;
                             Debug.Log("Player3_2 on board");
+                            player3move += 1;
                             NotClicked = false;
                         }
                     }
@@ -498,10 +538,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player3_2.GetComponent<Move_Script>().moveAllowed = true;
                         player3_2.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player3_2 on moved");
+                        player3move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player3_3OnBoard == false)
                     {
@@ -512,6 +553,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player3_3.GetComponent<Move_Script>().Clicked = false;
                             player3_3OnBoard = true;
                             Debug.Log("Player3_3 on board");
+                            player3move += 1;
                             NotClicked = false;
                         }
                     }
@@ -521,10 +563,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player3_3.GetComponent<Move_Script>().moveAllowed = true;
                         player3_3.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player3_3 on moved");
+                        player3move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player3_4OnBoard == false)
                     {
@@ -535,6 +578,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player3_4.GetComponent<Move_Script>().Clicked = false;
                             player3_4OnBoard = true;
                             Debug.Log("Player3_4 on board");
+                            player3move += 1;
                             NotClicked = false;
                         }
                     }
@@ -544,6 +588,7 @@ public class Game_Controller_Script : MonoBehaviour
                         player3_4.GetComponent<Move_Script>().moveAllowed = true;
                         player3_4.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player3_4 on moved");
+                        player3move += 1;
                         NotClicked = false;
                     }
                 }
@@ -564,7 +609,7 @@ public class Game_Controller_Script : MonoBehaviour
             {
                 Debug.Log("While Loop Triggered");
                 randomPiece = Random.Range(0, 4);
-                if (randomPiece == 1)
+                if (randomPiece == 0)
                 {
                     if (player4_1OnBoard == false)
                     {
@@ -575,6 +620,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player4_1.GetComponent<Move_Script>().Clicked = false;
                             player4_1OnBoard = true;
                             Debug.Log("Player4_1 on board");
+                            player4move += 1;
                             NotClicked = false;
                         }
                     }
@@ -584,10 +630,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player4_1.GetComponent<Move_Script>().moveAllowed = true;
                         player4_1.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player4_1 on moved");
+                        player4move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 2)
+                else if (randomPiece == 1)
                 {
                     if (player4_2OnBoard == false)
                     {
@@ -598,6 +645,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player4_2.GetComponent<Move_Script>().Clicked = false;
                             player4_2OnBoard = true;
                             Debug.Log("Player4_2 on board");
+                            player4move += 1;
                             NotClicked = false;
                         }
                     }
@@ -607,10 +655,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player4_2.GetComponent<Move_Script>().moveAllowed = true;
                         player4_2.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player4_2 on moved");
+                        player4move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 3)
+                else if (randomPiece == 2)
                 {
                     if (player4_3OnBoard == false)
                     {
@@ -621,6 +670,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player4_3.GetComponent<Move_Script>().Clicked = false;
                             player4_3OnBoard = true;
                             Debug.Log("Player4_3 on board");
+                            player4move += 1;
                             NotClicked = false;
                         }
                     }
@@ -630,10 +680,11 @@ public class Game_Controller_Script : MonoBehaviour
                         player4_3.GetComponent<Move_Script>().moveAllowed = true;
                         player4_3.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player4_3 on moved");
+                        player4move += 1;
                         NotClicked = false;
                     }
                 }
-                else if (randomPiece == 4)
+                else if (randomPiece == 3)
                 {
                     if (player4_4OnBoard == false)
                     {
@@ -644,6 +695,7 @@ public class Game_Controller_Script : MonoBehaviour
                             player4_4.GetComponent<Move_Script>().Clicked = false;
                             player4_4OnBoard = true;
                             Debug.Log("Player4_4 on board");
+                            player4move += 1;
                             NotClicked = false;
                         }
                     }
@@ -653,6 +705,7 @@ public class Game_Controller_Script : MonoBehaviour
                         player4_4.GetComponent<Move_Script>().moveAllowed = true;
                         player4_4.GetComponent<Move_Script>().Clicked = false;
                         Debug.Log("Player4_4 on moved");
+                        player4move += 1;
                         NotClicked = false;
                     }
                 }
