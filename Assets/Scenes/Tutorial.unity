@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '5. Are all the rules clear? Get the fuck off and start the game. '
+  m_Text: 5. Are all the rules clear? Let's start the game!!! Good Luck~~~
 --- !u!222 &549452846
 CanvasRenderer:
   m_ObjectHideFlags: 0
