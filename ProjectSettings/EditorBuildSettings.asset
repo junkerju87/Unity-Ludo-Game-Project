@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 9e60c8cf42d784eb08f284701fc3646c
+  - enabled: 1
+    path: Assets/Scenes/openvideo.unity
+    guid: 41f982858066c4499aa06f22419c5ea2
   m_configObjects: {}
